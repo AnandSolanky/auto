@@ -11,7 +11,7 @@ http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/m
 	<api-gateway:autodiscovery apiId="${api.id}" ignoreBasePath="true" doc:name="API Autodiscovery" doc:id="52b395e2-991a-4c9b-b053-acc6f014b4bc" flowRef="auto-discovery-apiFlow" />
 	<flow name="auto-discovery-apiFlow" doc:id="58b7140e-96c7-4264-87fb-03bb2a38f574" >
 		<http:listener doc:name="Listener" doc:id="341161bd-9e18-4afd-b571-35deadec99d3" config-ref="HTTP_Listener_config" path="/v1"/>
-		<logger level="INFO" doc:name="Logger" doc:id="dceeaa77-51f8-43e2-a2f4-1ac31da80da1" message="The flow is Started"/>
+		<logger level="INFO" doc:name="Logger" doc:id="dceeaa77-51f8-43e2-a2f4-1ac31da80da1" message="The flow is Started change"/>
 		<set-payload value='#["The flow is Started"]' doc:name="Set Payload" doc:id="aa071c73-756b-412d-8684-d84d925cefa0" />
 	</flow>
 </mule>
